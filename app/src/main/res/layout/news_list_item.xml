@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/newsListItemHeight"
+    android:paddingEnd="@dimen/standardPadding"
+    android:paddingLeft="@dimen/standardPadding"
+    android:paddingRight="@dimen/standardPadding"
+    android:paddingStart="@dimen/standardPadding">
+
+    <TextView
+        android:id="@+id/section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="true"
+        android:textColor="@color/sectionColor"
+        android:textSize="@dimen/sectionTextSize"
+        android:textStyle="bold"
+        tools:text="Politics" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textColor="@color/titleColor"
+        android:textSize="@dimen/titleTextSize"
+        tools:text="@string/longPlaceHolder" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/smallMargin"
+        android:layout_marginStart="@dimen/smallMargin">
+
+        <TextView
+            android:id="@+id/by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_vertical"
+            android:text="@string/by"
+            android:textColor="@color/authorColor"
+            android:textSize="@dimen/authorTextSize"
+            tools:text=" By " />
+
+        <TextView
+            android:id="@+id/author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_toEndOf="@id/by"
+            android:layout_toRightOf="@id/by"
+            android:textColor="@color/authorColor"
+            android:textSize="@dimen/authorTextSize"
+            tools:text="Jon Snow" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/timeColor"
+            android:textSize="@dimen/timeTextSize"
+            tools:text=" 13:57" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/time"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/dateColor"
+            android:textSize="@dimen/dateTextSize"
+            tools:text="Jan 1, 2000" />
+
+    </RelativeLayout>
+</RelativeLayout>

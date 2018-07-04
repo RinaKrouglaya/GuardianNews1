@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GuardianNews1</string>
+    <string name="by"> By \</string>
+
+    <string name="longPlaceHolder">Long title placeholder that should wrap to more than 2 lines
+        of text. More and More and more and more and more</string>
+
+    <string name="no_internet">No Internet connection.</string>
+    <string name="no_news">There are no news at the moment.</string>
+    <string name="noLinkProvided">No link was provided.</string>
+</resources>
